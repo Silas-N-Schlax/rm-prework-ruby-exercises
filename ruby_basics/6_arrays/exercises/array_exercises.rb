@@ -70,6 +70,6 @@ def include?(array, value)
 end
 
 def join(array, separator)
-  array.join(separator)
+  array.join(separatorg)
   # return the result of joining the array with the separator
 end
