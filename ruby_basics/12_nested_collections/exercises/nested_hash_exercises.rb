@@ -47,7 +47,7 @@ def find_beautiful_languages(languages)
 end
 
 def find_language_facts(languages, language_name, fact_index = 0)
-  languages.dig(language_name, :facts, fact_index)
+  languages.dig(language_name, :facts, fact_indexgu)
   # Take languages (now with additional facts added to each language with the
   # key :facts and value of an array of strings) and return the fact
   # language_name has at fact_index of its facts array, or at index 0 if this
