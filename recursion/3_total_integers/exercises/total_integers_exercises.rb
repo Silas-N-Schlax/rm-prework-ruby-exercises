@@ -7,4 +7,9 @@ def total_integers(array)
   # NOTE: you may notice that `Array#flatten` would make quick work of this,
   # but you should implement this method without using it. The tests will check
   # to make sure `#flatten` isn't used.
+  return 1 if array.is_a?(Integer)
+  return 0 if !array.is_a?(Array)
+  total = 0
+  array.each { |item| total += total_integers(item) }
+  total
 end
